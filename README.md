@@ -29,3 +29,26 @@ unique instrument with a “twinkling” or shimmering quality, heard only
 in that section.",
   
 ![Timbre](self-similarity-timbre.png)
+
+# Week 10 : Keygram for Billie Eilish's What Was I Made For?
+The keygram computed using the Chebyshev distance shows that several
+keys consistently have lower distance values (darker blue regions), 
+indicating a stronger similarity to the harmonic content of the 
+piece. In particular, C major and A minor appear frequently as 
+darker rows across much of the time axis, suggesting that the 
+music is centered around the C major tonal region.Other closely 
+related keys such as G major and E minor also show relatively 
+low distance values. Since these keys are neighbours in the 
+Circle of Fifths, their prominence likely reflects harmonic 
+relationships. 
+
+Most of the song shows signs of tonal stability except around 
+50–60 seconds, a noticeable change in the colour pattern occurs 
+where the darker regions briefly shift to different keys. This 
+could indicate a short modulation. 
+
+Overall, the keygram suggests that the global tonal center is 
+most likely C major (or its relative minor A minor), with 
+occasional emphasis on closely related keys such as G major or 
+E minor due to harmonic relationships within the tonal system.
+![Key](keygram.png)
