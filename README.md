@@ -1,9 +1,9 @@
 # Week10
 Homework assignment for week10 computational musicology
 
-##Week 9 : Self-Similarity Matrices for Billie Eilish's What Was I Made For?
+## Week 9 : Self-Similarity Matrices for Billie Eilish's What Was I Made For?
 
-###Self Similarity on the basis of Pitch :
+### Self Similarity on the basis of Pitch :
 Comparing the pitch-based self-similarity matrix, distinct block patterns 
 correspond to the musical sections of the song: A1, A2, B, A1, B, 
 A2, where A represents verses and B the chorus. Around 60 seconds, 
@@ -17,7 +17,7 @@ stability.
   
 ![Pitch](self-similarity-pitch.png)
 
-###Self Similarity on the basis of Timbre :
+### Self Similarity on the basis of Timbre :
 Examining the timbre-based self-similarity matrix, several connections 
 between sound and visual representation are visible. Around 30–40 
 seconds, a yellow line corresponds to a peak in the song where additional 
