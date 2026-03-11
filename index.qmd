@@ -29,3 +29,5 @@ Most of the song shows signs of tonal stability except around 50–60 seconds, a
 Overall, the keygram suggests that the global tonal center is most likely C major (or its relative minor A minor), with occasional emphasis on closely related keys such as G major or E minor due to harmonic relationships within the tonal system.
 
 ![Key](keygram.png)
+# Tempogram
+![Key](Rplot.png)
