@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="navbar-author">Tanisha Sinha</div>
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-self-similarity---pitch" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#self-similarity---pitch" data-scrolling="false" href="#self-similarity---pitch" aria-controls="self-similarity---pitch" aria-selected="true"><span class="nav-link-text">Self Similarity - Pitch</span></a></li><li class="nav-item" role="presentation"><a id="tab-self-similarity---timbre" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#self-similarity---timbre" data-scrolling="false" href="#self-similarity---timbre" aria-controls="self-similarity---timbre" aria-selected="false"><span class="nav-link-text">Self Similarity - Timbre</span></a></li><li class="nav-item" role="presentation"><a id="tab-keygram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#keygram" data-scrolling="false" href="#keygram" aria-controls="keygram" aria-selected="false"><span class="nav-link-text">Keygram</span></a></li></ul></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-self-similarity" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#self-similarity" data-scrolling="false" href="#self-similarity" aria-controls="self-similarity" aria-selected="true"><span class="nav-link-text">Self Similarity</span></a></li><li class="nav-item" role="presentation"><a id="tab-keygram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#keygram" data-scrolling="false" href="#keygram" aria-controls="keygram" aria-selected="false"><span class="nav-link-text">Keygram</span></a></li><li class="nav-item" role="presentation"><a id="tab-tempogram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#tempogram" data-scrolling="false" href="#tempogram" aria-controls="tempogram" aria-selected="false"><span class="nav-link-text">Tempogram</span></a></li></ul></div></div>
 </nav>
 </header>
 <div id="quarto-search-results"></div>
@@ -115,38 +115,31 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="bslib-grid-item html-fill-item tab-content bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
-<div id="self-similarity---pitch" class="dashboard-page tab-pane show active html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-self-similarity---pitch">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+<div id="self-similarity" class="dashboard-page tab-pane show active html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-self-similarity">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 40fr) minmax(3em, 60fr);
 grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
+<p><img src="self-similarity-pitch.png" class="img-fluid" alt="Self-Similarity Matrix-Pitch"> <img src="self-similarity-timbre.png" class="img-fluid" alt="Self-Similarity Matrix - Timbre"></p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<h4>
+Self Similarity - Pitch
+</h4>
 <p>Comparing the pitch-based self-similarity matrix, distinct block patterns correspond to the musical sections of the song: A1, A2, B, A1, B, A2, where A represents verses and B the chorus. Around 60 seconds, the first chorus begins, with higher pitch reflected as a yellow/green vertical line in the matrix. A similar pattern appears just before 150 seconds during the second chorus, marked by richer harmonies in the line “cause I, cause I, I don’t know how to feel.” Towards the end, the instrumentation is sparser and primarily vocals, producing thicker green bands that reflect the overall pitch stability.</p>
-<div class="quarto-figure quarto-figure-center html-fill-item html-fill-container">
-<figure class="figure">
-<p><img src="self-similarity-pitch.png" class="img-fluid figure-img"></p>
-<figcaption>Self-Similarity Matrix-Pitch</figcaption>
-</figure>
-</div>
-</div>
-<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
-    <template>Expand</template>
-    <span class="bslib-full-screen-enter badge rounded-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
-    </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
-</div>
-</div><div id="self-similarity---timbre" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-self-similarity---timbre">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
-grid-auto-rows: minmax(0, 1fr);">
-<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
-<div class="card-body html-fill-item html-fill-container">
+<h4>
+Self Similarity - Timbre
+</h4>
 <p>Examining the timbre-based self-similarity matrix, several connections between sound and visual representation are visible. Around 30–40 seconds, a yellow line corresponds to a peak in the song where additional instruments are heard during the lyrics “taking a drive.” Green lines around 80 seconds reflect sections with mostly humming vocals. Around 120 seconds, new instruments appear, indicated by corresponding lines in the matrix. Thick yellow lines near 180 seconds represent a unique instrument with a “twinkling” or shimmering quality, heard only in that section.”</p>
-<div class="quarto-figure quarto-figure-center html-fill-item html-fill-container">
-<figure class="figure">
-<p><img src="self-similarity-timbre.png" class="img-fluid figure-img"></p>
-<figcaption>Self-Similarity Matrix - Timbre</figcaption>
-</figure>
-</div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -154,6 +147,7 @@ grid-auto-rows: minmax(0, 1fr);">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
 </div>
 </div><div id="keygram" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-keygram">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
@@ -163,7 +157,26 @@ grid-auto-rows: minmax(0, 1fr);">
 <p>The keygram computed using the Chebyshev distance shows that several keys consistently have lower distance values (darker blue regions), indicating a stronger similarity to the harmonic content of the piece. In particular, C major and A minor appear frequently as darker rows across much of the time axis, suggesting that the music is centered around the C major tonal region.Other closely related keys such as G major and E minor also show relatively low distance values. Since these keys are neighbours in the Circle of Fifths, their prominence likely reflects harmonic relationships.</p>
 <p>Most of the song shows signs of tonal stability except around 50–60 seconds, a noticeable change in the colour pattern occurs where the darker regions briefly shift to different keys. This could indicate a short modulation.</p>
 <p>Overall, the keygram suggests that the global tonal center is most likely C major (or its relative minor A minor), with occasional emphasis on closely related keys such as G major or E minor due to harmonic relationships within the tonal system.</p>
-<p><img src="keygram.png" class="img-fluid" alt="Key"> # Tempogram <img src="Rplot.png" class="img-fluid" alt="Key"></p>
+<div class="quarto-figure quarto-figure-center html-fill-item html-fill-container">
+<figure class="figure">
+<p><img src="keygram.png" class="img-fluid figure-img"></p>
+<figcaption>Key</figcaption>
+</figure>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div><div id="tempogram" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-tempogram">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<p>tempogram <img src="mnovelty.png" class="img-fluid" alt="tempo"> <img src="act.png" class="img-fluid" alt="act"> <img src="dft.png" class="img-fluid" alt="dft"></p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
