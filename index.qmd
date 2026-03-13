@@ -35,7 +35,14 @@ Overall, the keygram suggests that the global tonal center is most likely C majo
 ![Key](keygram.png)
 
 # Tempogram
-
+## Column {width=40%}
 tempogram ![tempo](mnovelty.png)
 ![act](act.png)
 ![dft](dft.png)
+
+## Column {width=60%}
+<h4> Novelty Histogram </h4>
+Murder in my Mind by Kordhell is a very energetic song that is shown by the novelty histogram. The presence of multiple spikes at fairly regular distance is consistent with the sonmg that has rhythmic onsets and consistent beats and percussive elements.
+
+<h4> ACF and DFT Tempograms </h4>
+The ACF Tempogram shows clear bands around 30-35 BPM, 60-70 BPM, and 120-140BPM indicating clear tempo subharmonics. It is likely that 120 BPM is the beat level tempo of this song. The DFT tempogram on the other hand shows clear bands at 120, 240 and 360 indicating the strong harmonic frequencies.
