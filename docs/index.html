@@ -103,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="navbar-author">Tanisha Sinha</div>
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-self-similarity" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#self-similarity" data-scrolling="false" href="#self-similarity" aria-controls="self-similarity" aria-selected="true"><span class="nav-link-text">Self Similarity</span></a></li><li class="nav-item" role="presentation"><a id="tab-keygram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#keygram" data-scrolling="false" href="#keygram" aria-controls="keygram" aria-selected="false"><span class="nav-link-text">Keygram</span></a></li><li class="nav-item" role="presentation"><a id="tab-tempogram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#tempogram" data-scrolling="false" href="#tempogram" aria-controls="tempogram" aria-selected="false"><span class="nav-link-text">Tempogram</span></a></li></ul></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-self-similarity" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#self-similarity" data-scrolling="false" href="#self-similarity" aria-controls="self-similarity" aria-selected="true"><span class="nav-link-text">Self Similarity</span></a></li><li class="nav-item" role="presentation"><a id="tab-keygram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#keygram" data-scrolling="false" href="#keygram" aria-controls="keygram" aria-selected="false"><span class="nav-link-text">Keygram</span></a></li><li class="nav-item" role="presentation"><a id="tab-tempogram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#tempogram" data-scrolling="false" href="#tempogram" aria-controls="tempogram" aria-selected="false"><span class="nav-link-text">Tempogram</span></a></li><li class="nav-item" role="presentation"><a id="tab-clustering" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#clustering" data-scrolling="false" href="#clustering" aria-controls="clustering" aria-selected="false"><span class="nav-link-text">Clustering</span></a></li></ul></div></div>
 </nav>
 </header>
 <div id="quarto-search-results"></div>
@@ -208,6 +208,41 @@ Novelty Histogram
 ACF and DFT Tempograms
 </h4>
 <p>The ACF Tempogram shows clear bands around 30-35 BPM, 60-70 BPM, and 120-140BPM indicating clear tempo subharmonics. It is likely that 120 BPM is the beat level tempo of this song. The DFT tempogram on the other hand shows clear bands at 120, 240 and 360 indicating the strong harmonic frequencies.</p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div><div id="clustering" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-clustering">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 50fr) minmax(3em, 50fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<h4>
+Corpus Details
+</h4>
+<p>Some background information about my corpus since the other pages may not be fully related : My corpus consists of top 70 songs that I have been actively listening to and consistently keep going back to. In my opinion, I have 2 major kinds of music I lean towards - 1. High energy, very danceable pop music (for when I am feeling great :) ) 2. Low energy, slow paced songs (when I am down in the dumps as one sometimes is). My main idea is to explore if there are any commonalities at a deeper level in terms of keys, tempo or chords that I was previously not aware of. Hence, my final corpus of 70 consists of 45 songs that I consider ‘high’ and 25 that I consider ‘low’.</p>
+<h4>
+Hierarchial Clustering
+</h4>
+<p>The hirarchial cluster rendered uninteresting results when all the elements of the “recipe” were used. I then picked the top 3 features that were the most useful in classifying music according to the Random Forest Algorithm to see how different the results would be. To my surprise a combination of Loudness, Energy and Acousticness worked out quite well on my whole corpus. It divided it into a 25-75% split of low-dominant and high-dominant song. This is pretty impressive as my original split of portfolio is at 35-65%. I have highlighted areas in similar colours where I agree the songs in proximity are pretty similar. It has accurately identified common music types like slow, acoustic songs (in red), danceable club hits of Pitbull, Usher etc (in peach), upbeat but still a very different vibe of songs in pink like those by the Weeknd and The Neighbourhood.</p>
+<p>The results of the clustering on just the 25 low songs were more interesting. It essentially divided into 2 sub-clusters of songs that are low yet still upbeat like Therefore I am, Bitter Leaf, Pal Pal and the bigger cluster consists of more acoustic, ‘sadder’ sounding songs. It seems to have accurately clustered most of Billie Eilish’s songs in the middle from Lost Cause to Lovely.</p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<p><img src="colour.jpeg" class="img-fluid" alt="Corpus Songs"> <img src="den_low.png" class="img-fluid" alt="Low Songs"></p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
